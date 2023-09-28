@@ -37,7 +37,7 @@ export default function About() {
         <title>Jafar Aji | About</title>
         <meta name="describtion" content="descrebtion" />
       </Head>
-      <TransitionEffect/>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText
