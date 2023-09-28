@@ -6,14 +6,16 @@ import Image from "next/image";
 import Link from "next/link";
 import heratawoer from "../../public/images/projects/Hearatowera.png";
 import harmony from "../../public/images/projects/Harmony.png";
-import porject3 from "../../public/images/projects/ProtFile.png"
-import TransitionEffect from "@/components/TransitionEffect";
+import porject3 from "../../public/images/projects/ProtFile.png";
+import TransitionEffect from "@/components/TransitionEffect.1";
 
 const FeaturedProjects = ({ type, title, summary, link, img }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl
+    <article
+      className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl
     lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4
-    ">
+    "
+    >
       <Link
         href={link}
         target="_blank"
@@ -31,15 +33,16 @@ const FeaturedProjects = ({ type, title, summary, link, img }) => {
             {title}
           </h2>
         </Link>
-        <span className="text-primary font-medium text-xl my-2 xs:text-base">{type}</span>
+        <span className="text-primary font-medium text-xl my-2 xs:text-base">
+          {type}
+        </span>
         <p className="my-1 font-medium">{summary}</p>
         <div className="mt-2 flex items-center">
           <Link
             href={link}
             target="_blank"
             className="flex items-center p-1.5 px-6 rounded-lg bg-dark text-light  font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark sm:px-4 sm:text-base"
-             
-             >
+          >
             Visit Site <LinkArrow className={"!w-3 ml-1"} />
           </Link>
         </div>
@@ -50,9 +53,11 @@ const FeaturedProjects = ({ type, title, summary, link, img }) => {
 
 const Project = ({ type, title, img, link }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-3xl border border-solid border-dark bg-light shadow-2xl relative
+    <article
+      className="w-full flex flex-col items-center justify-center rounded-3xl border border-solid border-dark bg-light shadow-2xl relative
      xs:p-4
-    ">
+    "
+    >
       <Link
         href={link}
         target="_blank"
@@ -66,7 +71,9 @@ const Project = ({ type, title, img, link }) => {
             {title}
           </h2>
         </Link>
-        <span className="text-primary font-medium my-2 lg:text-lg md:text-base">{type}</span>
+        <span className="text-primary font-medium my-2 lg:text-lg md:text-base">
+          {type}
+        </span>
         <div className="mt-2 flex items-center">
           <Link
             href={link}
@@ -90,7 +97,7 @@ export default function Projects() {
         <title>Jafar Aji | Projects</title>
         <meta name="describtion" content="descrebtion" />
       </Head>
-      <TransitionEffect/>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText
