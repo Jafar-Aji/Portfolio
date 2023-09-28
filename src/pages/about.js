@@ -53,7 +53,7 @@ export default function About() {
                 Hi, I am Jafar Aji, a FrontEnd web developer with a passion for
                 creating beautiful, functional, and user-centered digital
                 experiences. With 6 years of experience in the field. I am
-                always looking for new and innovative ways to bring my clients'
+                always looking for new and innovative ways to bring my clients
                 visions to life.
               </p>
               <p className="font-medium my-4">
